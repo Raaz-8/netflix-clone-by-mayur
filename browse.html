@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="browse.css">
+    <link href="../img/netflix-favicon.png" rel="icon" type="image/x-icon" />
+</head>
+<body>
+    <header class="showcase">
+        <div class="showcase-top">
+            <a href="index.html"><img src="img/logo.png" alt="Netflix"></a>
+            <a href="signup.html" class="btn btn-rounded a1">Series</a>
+            <a href="signup.html" class="btn btn-rounded a2">Films</a>
+        </div>
+        <div class="h-text">
+            <div>
+            <h1>Watch Joker Now</h1>
+            <p>Forever alone in a crowd, failed comedian Arthur Fleck seeks connection as he walks the streets of Gotham City , Arthur wears two masks --the one he paints for his day job as a clown, and the guise he projcts in a futile attempt to feel like he's part of the world around him. </p>
+            <button>
+                <a href="#" onclick="lightbox_open();"   class="m-btn">Play</a>  
+              </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="drama">
+            <h1>Drama</h1>
+            <img src="\img\drama\fight-club\small.jpg" alt="">
+            <img src="img\drama\the-prestige\small.jpg" alt="">
+            <img src="img\drama\the-social-network\small.jpg" alt="">
+            <img src="img\drama\the-revenant\small.jpg" alt="">
+            <img src="img\drama\kings-speech\small.jpg" alt="">
+        </div>
+
+        <div>
+            <div class="m-text">
+                <div class="fc">
+                    <h1>Fight Club</h1>
+                    <p>Discontented with his capitalistic lifestyle, a white-collared insomniac forms an underground fight club with Tyler, a careless soap salesman. The project soon spirals down into something sinister.</p>
+                    <button>
+                      <a href="#" onclick="lightbox_open();" class="m-btn">Play</a>  
+                    </button>
+                </div>
+                <div>
+                    <img class="fc-img" src="\img\drama\fight-club\large.jpg" alt="">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="drama">
+            <h1>Thriler</h1>
+            <img src="img\thriller\NC1\nc1.jpg" alt="">
+            <img src="img\thriller\sl2\sl2.jpg" alt="">
+            <img src="img\thriller\bs3\bs3.jpg" alt="">
+            <img src="img\thriller\Joker4\joker4.jpg" alt="">
+            <img src="img\thriller\aqp5\aqp5.jpg" alt="">
+        </div>
+        <div class="drama">
+            <h1>Children</h1>
+            <img src="img\children\hotel-transylvania\small.jpg" alt="">
+            <img src="img\children\spirited-away\small.jpg" alt="">
+            <img src="img\children\up\small.jpg" alt="">
+            <img src="img\children\frozen\small.jpg" alt="">
+            <img src="img\children\despicable-me\small.jpg" alt="">
+        </div>
+        <div class="drama">
+            <h1>Suspense</h1>
+            <img src="img\suspense\shutter-island\small.jpg" alt="">
+            <img src="img\suspense\seven\small.jpg" alt="">
+            <img src="img\suspense\prisoners\small.jpg" alt="">
+            <img src="img\suspense\zodiac\small.jpg" alt="">
+            <img src="img\suspense\gone-girl\small.jpg" alt="">
+        </div>
+        <div class="drama">
+            <h1>Romance</h1>
+            <img src="img\romance\la-la-land\small.jpg" alt="">
+            <img src="img\romance\titanic\small.jpg" alt="">
+            <img src="img\romance\a-star-is-born\small.jpg" alt="">
+            <img src="img\romance\the-notebook\small.jpg" alt="">
+            <img src="img\romance\blue-valentine\small.jpg" alt="">
+        </div>
+        <div id="light">
+            <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+            <video id="VisaChipCardVideo" width="600" controls>
+                <source src="vid/fc-trailer.mp4" type="video/mp4">
+                <!--Browser does not support <video> tag -->
+              </video>
+          </div>
+          
+          <div id="fade" onClick="lightbox_close();"></div>
+    </main>
+    <footer class="footer">
+        <p>Questions? Contact Us</p>
+            <div class="footer-cols">
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Speed Test</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Help Centre</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Cookie Preferences</a></li>
+                    <li><a href="#">Watch for Free</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Ways to Watch</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                    <li><a href="#">Legal Notices</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Media Centre</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Netflix Originals</a></li>
+                </ul>
+            </div>
+    </footer>
+
+    <script>
+        window.document.onkeydown = function(e) {
+  if (!e) {
+    e = event;
+  }
+  if (e.keyCode == 27) {
+    lightbox_close();
+  }
+}
+
+function lightbox_open() {
+  var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+  window.scrollTo(0, 0);
+  document.getElementById('light').style.display = 'block';
+  document.getElementById('fade').style.display = 'block';
+  lightBoxVideo.play();
+}
+
+function lightbox_close() {
+  var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+  document.getElementById('light').style.display = 'none';
+  document.getElementById('fade').style.display = 'none';
+  lightBoxVideo.pause();
+}
+    </script>
+</body>
+</html>
