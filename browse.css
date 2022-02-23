@@ -39,7 +39,7 @@ img{
 
 .showcase{
     width: 100%;
-    height: 130vh;
+    height: auto;
     position: relative;
     background: url('../img/jkbg1.jpg');
     background-size: cover;
@@ -127,21 +127,21 @@ img{
 }
 
 .h-text h1{
-    font-size: 3.3rem;
+    font-size: 2.8rem;
     margin-bottom: 2rem;
 }
 
 .h-text p{
-    line-height: 1.7rem;
-    font-size: 1.4rem;
+    line-height: 1.3rem;
+    font-size: 1.2rem;
     color: #fff;
 }
 
 .h-text button{
-    padding: 0.6rem 1.8rem;
-    font-size: 1.4rem;
+    padding: 0.5rem 1.6rem;
+    font-size: 1.2rem;
     font-weight: 500;
-    margin:1.5rem 2rem;
+    margin:1.5rem 1.5rem 4rem 2rem;
     border-radius:5px;
     border: none;
     /* cursor:pointer; */
