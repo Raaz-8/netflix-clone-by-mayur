@@ -6,6 +6,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    transition: 0.2s;
 }
 
 body{
@@ -151,7 +152,7 @@ img{
     position: relative;
     /* margin: auto; */
     padding: 0.6rem 0.1rem 0.6rem 1.2rem;
-    background: #e50914;
+    background: #d80914;
     border: #e50914;
     color: #fff;
     font-size: 16px;
@@ -181,7 +182,7 @@ img{
 .jumbotron{
     display:flex;
     flex-direction: column;
-    max-width: 1100px;
+    max-width: 80%;
     margin: 0 auto;
     text-align: left;
     /* justify-content: center; */
@@ -280,7 +281,7 @@ img{
 }
 
 .jumbotron3 video{
-    width: 300px;
+    width: 240px;
     margin : 1.5rem;
 }
 
@@ -494,15 +495,15 @@ transition: max-height 0.3s cubic-bezier(0.5, 0, 0.1, 1) 0s;
     transition: (0.2s);
 }
 
-@media(max-width:800px){
+@media(max-width:820px){
 
     .showcase{
         width: 100%;
-        height: 85vh;
+        height: 100vh;
     }
     
     .showcase-top img{
-        width: 90px;
+        width: 150px;
         position: absolute;
         top: 50%;
         left:15%;
@@ -510,20 +511,20 @@ transition: max-height 0.3s cubic-bezier(0.5, 0, 0.1, 1) 0s;
     }
 
     .showcase-content{
-    margin-top:5.6rem;
+    margin-top:10rem;
 
     }
     
     .showcase-content h1{
         font-weight: 600;
-        font-size: 1.7rem;
-        line-height: 1.1;
+        font-size: 2.2rem;
+        line-height: 1.1rem;
         margin-bottom: 1rem;
     }
     
     .showcase-content p{
         font-weight: 500;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         margin-top: 0;
     }
     
@@ -536,8 +537,10 @@ transition: max-height 0.3s cubic-bezier(0.5, 0, 0.1, 1) 0s;
         cursor:pointer;
     }
 
+    
+
     .btn-xl{
-        font-size: 1.1rem;
+        font-size: 1rem;
         padding: 0.4rem 1.3rem;
         width: 70%;
         font-weight:540;
@@ -551,7 +554,7 @@ transition: max-height 0.3s cubic-bezier(0.5, 0, 0.1, 1) 0s;
     }
     
     .optform-mail{
-        padding: 0.9rem 15rem 0.9rem 0.5rem;
+        padding: 0.9rem 26rem 0.9rem 0.5rem;
         margin-bottom:1rem ;
     }
 
@@ -560,6 +563,18 @@ transition: max-height 0.3s cubic-bezier(0.5, 0, 0.1, 1) 0s;
         color: #fff;
         font-size: 16px;
         width: 8rem;
+    }
+
+    .optform-btn:hover{
+        position: relative;
+        /* margin: auto; */
+        padding: 0.4rem 0.1rem 0.3rem 1rem;
+        background: #ff101c;
+        border: #e50914;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 520;
+        cursor: pointer;
     }
     
     .optform-icon{
@@ -572,7 +587,7 @@ transition: max-height 0.3s cubic-bezier(0.5, 0, 0.1, 1) 0s;
     .jumbotron{
         display:flex;
         flex-direction: column;
-        max-width: 1100px;
+        max-width: 80%;
         margin: 0 auto;
         text-align: left;
         /* justify-content: center; */
@@ -593,16 +608,16 @@ transition: max-height 0.3s cubic-bezier(0.5, 0, 0.1, 1) 0s;
     }
     
     .jumbotron1 h1{
-        font-size: 30px;
+        font-size: 36px;
         text-align: center; 
     }
     
     .jumbotron1 p{
         text-align: center;
-        font-size: 16px;
+        font-size: 22px;
         margin-top: 1rem;
         color: #fff;
-        line-height: 1.4rem;
+        line-height: 2rem;
     }
     
     .jumbotron2{
@@ -615,15 +630,15 @@ transition: max-height 0.3s cubic-bezier(0.5, 0, 0.1, 1) 0s;
     }
     
     .jumbotron2 h1{
-        font-size: 30px;
+        font-size: 36px;
         text-align: center;
     }
     
     .jumbotron2 p{
         text-align: center;
-        font-size: 16px;
+        font-size: 22px;
         margin-top: 1rem;
-        line-height: 1.2rem;
+        line-height: 2rem;
     }
     
     .jumbotron2 img{
@@ -641,26 +656,26 @@ transition: max-height 0.3s cubic-bezier(0.5, 0, 0.1, 1) 0s;
     }
     
     .jumbotron3 h1{
-        font-size: 30px;
+        font-size: 36px;
         text-align: center;
     }
     
     .jumbotron3 p{
         text-align: center;
-        font-size: 16px;
+        font-size: 22px;
         margin-top: 1rem;
         color: #fff;
-        line-height: 1.2rem;
+        line-height: 2rem;
     }
     
     .jumbotron3 video{
-        width: 300px;
+        width: 200px;
         margin : 1.5rem;
     }
             
     .v3 video{
-        margin-top: 3.5rem;
-        width: 270px;
+        margin-top: 3rem;
+        width:85%;
     }
 
     .sc-faq-ques{
@@ -686,7 +701,7 @@ transition: max-height 0.3s cubic-bezier(0.5, 0, 0.1, 1) 0s;
     }
     
     .optform-mail-foot{
-        padding: 0.9rem 15rem 0.9rem 0.5rem;
+        padding: 0.9rem 26rem 0.9rem 0.5rem;
         margin-bottom:1rem ;
     }
 
@@ -718,5 +733,251 @@ transition: max-height 0.3s cubic-bezier(0.5, 0, 0.1, 1) 0s;
     .footer li{
         line-height: 2.6;
     }
+
+  }
+
+@media(max-width:576px){
+
+    .showcase{
+        width: 100%;
+        height: 89vh;
+        border-bottom: 10px solid rgb(37, 37, 37);
+    }
+    
+    .showcase-top img{
+        width: 90px;
+        position: absolute;
+        top: 50%;
+        left:15%;
+        transform:translate(-50%,-50%);
+    }
+
+    .showcase-content{
+    margin-top:2.8rem;
+
+    }
+    
+    .showcase-content h1{
+        font-weight: 600;
+        font-size: 1.7rem;
+        line-height: 1.1;
+        margin-bottom: 1rem;
+    }
+    
+    .showcase-content p{
+        font-weight: 500;
+        font-size: 1rem;
+        margin-top: 0;
+    }
+    
+    /* buttons */
+    
+    .btn{
+        padding: 0.4rem 0.7rem;
+        font-size: 0.9rem;
+        text-align: center;
+        cursor:pointer;
+    }
+
+    .btn-xl{
+        font-size: 0.9rem;
+        padding: 0.4rem 1.3rem;
+        width: 70%;
+        font-weight:540;
+    }
+
+    .optform{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .optform-mail{
+        padding: 0.9rem 12rem 0.9rem 0.5rem;
+        margin-bottom:1rem ;
+    }
+
+    .optform-btn{
+        padding: 0.4rem 0.1rem 0.3rem 1rem;
+        color: #fff;
+        font-size: 16px;
+        width: 8rem;
+    }
+    
+    .optform-icon{
+        padding: 0.4rem 0rem 0.4rem 0.5rem;
+        cursor: pointer;
+        /* background: #e50914; */
+        color: #fff;
+    }
+
+    .jumbotron{
+        display:flex;
+        flex-direction: column;
+        max-width: 100%;
+        /* margin: 0 auto; */
+        text-align: left;
+        /* justify-content: center; */
+        /* margin-top:30vh; */
+        z-index:2;
+        /* height: 210vh; */
+        /* border-top: 0.5rem solid rgb(53, 52, 52); */
+        margin-top: 0rem;
+    }
+    
+    .jumbotron1{
+        max-width: 100%;
+        display:flex;
+        /* height: auto; */
+       justify-content: center; 
+        flex-direction: column;
+        align-items: center;
+        margin: 1.5rem;
+        
+    }
+    
+    .jumbotron1 h1{
+        font-size: 30px;
+        text-align: center; 
+        margin-top: 8vh;
+
+    }
+    
+    .jumbotron1 p{
+        text-align: center;
+        font-size: 16px;
+        margin-top: 1rem;
+        color: #fff;
+        line-height: 1.4rem;
+    }
+    
+    .jumbotron2{
+        display:flex;
+        height: auto;
+       justify-content: center; 
+        flex-direction: column;
+        align-items: center;
+        margin: 1.5rem;
+    }
+    
+    .jumbotron2 h1{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 8vh;
+    }
+    
+    .jumbotron2 p{
+        text-align: center;
+        font-size: 16px;
+        margin-top: 1rem;
+        line-height: 1.2rem;
+    }
+    
+    .jumbotron2 img{
+        width:400px;
+        margin-top: 12vh;
+    }
+    
+    .jumbotron3{
+        display:flex;
+        height: auto;
+        justify-content: center; 
+        flex-direction: column;
+        align-items: center;
+        margin: 1.5rem;
+    }
+    
+    .jumbotron3 h1{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 8vh;
+
+    }
+    
+    .jumbotron3 p{
+        text-align: center;
+        font-size: 16px;
+        margin-top: 1rem;
+        color: #fff;
+        line-height: 1.2rem;
+    }
+    
+    .jumbotron3 video{
+        width: 300px;
+        margin : 1.5rem;
+    }
+            
+    .v3 video{
+        margin-top: 3rem;
+        width: 220px;
+    }
+
+    .sc-faq-ques{
+        width: 100%;
+    }
+
+    .sc-faq-q1{
+        font-size: 18px;
+        font-weight: normal;
+        transition: 0.25s;
+    }
+
+    .faq h1{
+        font-size: 24px;
+        margin: 4rem auto 0rem auto;
+    }
+
+    .optform-foot{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 10px solid rgb(37, 37, 37);
+    }
+    
+    .optform-mail-foot{
+        padding: 0.9rem 12rem 0.9rem 0.5rem;
+        margin-bottom:1rem ;
+    }
+
+    .optform-btn-foot{
+        padding: 0.4rem 0.1rem 0.3rem 1rem;
+        color: #fff;
+        font-size: 16px;
+        width: 8rem;
+        margin-bottom: 3rem;
+    }
+    
+    .footer{
+    max-width: 80%;
+    margin: 1rem 4rem;
+    overflow: auto;
+    }
+
+    .footer ,
+    .footer a{
+        color: #7a7a7a;
+        font-size: 0.6rem;
+    }
+
+    .footer .footer-cols{
+        grid-template-columns: repeat(2 , 1fr);
+        grid-gap: 0rem;
+        margin-bottom: 3rem;
+    }
+
+    .footer li{
+        line-height: 2.6;
+    }
+
+    .story-card-img{
+        margin-top: 0rem;
+    }
+
+    .story-card-video{
+        margin: 0rem;
+    }
+    
 
   }
