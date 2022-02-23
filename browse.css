@@ -43,7 +43,7 @@ img{
     position: relative;
     background: url('../img/jkbg1.jpg');
     background-size: cover;
-    object-fit: cover;
+/*     object-fit: cover; */
 }
 
 .showcase::after{
